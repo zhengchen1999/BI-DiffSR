@@ -61,8 +61,6 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 <p align="center">
   <img width="900" src="figs/F1.png">
 </p>
-</details>
-
 
 
 
@@ -72,8 +70,6 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
   <img width="900" src="figs/F2-1.png">
   <img width="900" src="figs/F2-2.png">
 </p>
-
-</details>
 
 
 
@@ -85,7 +81,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
   <img width="900" src="figs/F3-2.png">
 </p>
 
-</details>
+
 
 ## <a name="acknowledgements"></a> Acknowledgements
 

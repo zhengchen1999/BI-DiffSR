@@ -44,7 +44,8 @@
 We achieved state-of-the-art performance. Detailed results can be found in the paper.
 
 <details>
-<summary>Evaluation on Synthetic Datasets (click to expand)</summary>
+<summary>Click to expand</summary>
+
 
 
 

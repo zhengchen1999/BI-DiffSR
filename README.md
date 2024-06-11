@@ -94,10 +94,10 @@ If you find the code helpful in your research or work, please cite the following
 
 ```
 @article{chen2024binarized,
-	title={Binarized Diffusion Model for Image Super-Resolution},
-	author={Chen, Zheng and Qin, Haotong and Guo, Yong and Su, Xiongfei and Yuan, Xin and Kong, Linghe and Zhang, Yulun},
-	journal={arXiv preprint arXiv:2406.05723},
-	year={2024}
+    title={Binarized Diffusion Model for Image Super-Resolution},
+    author={Chen, Zheng and Qin, Haotong and Guo, Yong and Su, Xiongfei and Yuan, Xin and Kong, Linghe and Zhang, Yulun},
+    journal={arXiv preprint arXiv:2406.05723},
+    year={2024}
 }
 ```
 

@@ -44,17 +44,19 @@
 We achieved state-of-the-art performance. Detailed results can be found in the paper.
 
 <details>
-<summary>Click to expand</summary>
-
-
-
+<summary>Quantitative Comparisons (click to expand)</summary>
 
 - quantitative comparisons in Table 2 (main paper)
 
 <p align="center">
   <img width="900" src="figs/T1.png">
 </p>
+</details>
 
+
+
+<details>
+<summary>Visual Comparisons (click to expand)</summary>
 
 
 - visual comparison in Figure 8 (main paper)
@@ -83,6 +85,21 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 </p>
 
 </details>
+
+
+
+## <a name="citation"></a> Citation
+
+If you find the code helpful in your research or work, please cite the following paper(s).
+
+```latex
+@article{chen2024binarized,
+    title={Binarized Diffusion Model for Image Super-Resolution},
+    author={Chen, Zheng and Qin, Haotong and Guo, Yong and Su, Xiongfei and Yuan, Xin and Kong, Linghe and Zhang, Yulun},
+  	journal={arXiv preprint arXiv:2406.05723},
+  	year={2024}
+}
+```
 
 
 

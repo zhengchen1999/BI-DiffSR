@@ -46,7 +46,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 <details>
 <summary>Quantitative Comparisons (click to expand)</summary>
 
-- quantitative comparisons in Table 2 (main paper)
+- Results in Table 2 (main paper)
 
 <p align="center">
   <img width="900" src="figs/T1.png">
@@ -59,7 +59,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 <summary>Visual Comparisons (click to expand)</summary>
 
 
-- visual comparison in Figure 8 (main paper)
+- Results in Figure 8 (main paper)
 
 <p align="center">
   <img width="900" src="figs/F1.png">
@@ -67,7 +67,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 
 
 
-- visual comparison in Figure 13 (supplemental material)
+- Results in Figure 13 (supplemental material)
 
 <p align="center">
   <img width="900" src="figs/F2-1.png">
@@ -77,7 +77,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 
 
 
-- visual comparison in Figure 14 (supplemental material)
+- Results in Figure 14 (supplemental material)
 
 <p align="center">
   <img width="900" src="figs/F3-1.png">

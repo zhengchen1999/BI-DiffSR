@@ -94,10 +94,10 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 If you find the code helpful in your research or work, please cite the following paper(s).
 
 ```
-@article{chen2024binarized,
+@inproceedings{chen2024binarized,
     title={Binarized Diffusion Model for Image Super-Resolution},
     author={Chen, Zheng and Qin, Haotong and Guo, Yong and Su, Xiongfei and Yuan, Xin and Kong, Linghe and Zhang, Yulun},
-    journal={arXiv preprint arXiv:2406.05723},
+    booktitle={NeurIPS},
     year={2024}
 }
 ```

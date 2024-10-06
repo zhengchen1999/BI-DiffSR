@@ -8,6 +8,7 @@
 
 #### 🔥🔥🔥 News
 
+- **2024-09-26:** BI-DiffSR is accepted at NeurIPS 2024. 🎉🎉🎉
 - **2024-06-09:** This repo is released.
 
 ---

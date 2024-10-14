@@ -82,7 +82,7 @@ The performance is reported on Urban100 (x4). Output size of FLOPs is 3×256×25
 - Run the following scripts. The training configuration is in `options/train/`.
 
   ```shell
-  # RGT-S, input=64x64, 4 GPUs
+  # BI-DiffSR, input=64x64, 4 GPUs
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 train.py -opt options/train/train_BI_DiffSR_x2.yml --launcher pytorch
   python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 train.py -opt options/train/train_BI_DiffSR_x4.yml --launcher pytorch
   ```

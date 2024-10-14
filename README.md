@@ -37,8 +37,8 @@
 - PyTorch 1.13.1+cu117
 
 ```bash
-# Clone the github repo and go to the default directory 'DAT'.
-git clone https://github.com/zhengchen1999/DAT.git
+# Clone the github repo and go to the default directory 'BI-DiffSR'.
+git clone https://github.com/zhengchen1999/BI-DiffSR.git
 conda create -n bi_diffsr python=3.9
 conda activate bi_diffsr
 pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html

@@ -73,9 +73,11 @@ Download training and testing datasets and put them into the corresponding folde
 | :-------- | :--------: | :-------: | :-------: | :----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | BI-DiffSR |    4.58    |   36.67   |   24.11   | 0.1823 | [Google Drive](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=sharing) | [Google Drive](https://drive.google.com/drive/folders/1-Mfy8XHG55Bc19gAXqNaNitO0GEx7O1r?usp=sharing) |
 
-The performance is reported on Urban100 (x4). Output size of FLOPs is 3×256×256.
+The performance is reported on Urban100 (×4). Output size of FLOPs is 3×256×256.
 
 ## <a name="training"></a> Training
+
+- The ×2 task requires **4 * 8 GB** VRAM, and the ×4 task requires **4 * 20 GB** VRAM.
 
 - Download [training](https://drive.google.com/file/d/1TubDkirxl4qAWelfOnpwaSKoj3KLAIG4/view?usp=share_link) (DF2K, already processed) and [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
 
@@ -93,7 +95,7 @@ The performance is reported on Urban100 (x4). Output size of FLOPs is 3×256×25
 
 - Download the pre-trained [models](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=sharing) and place them in `experiments/pretrained_models/`.
 
-  We provide pre-trained models for image SR (x2, x4).
+  We provide pre-trained models for image SR (×2, ×4).
 
 - Download [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, BSD100, Urban100, Manga109) datasets, place them in `datasets/`.
 

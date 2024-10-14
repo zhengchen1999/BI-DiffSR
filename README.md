@@ -2,12 +2,13 @@
 
 [Zheng Chen](https://zhengchen1999.github.io/), [Haotong Qin](https://htqin.github.io/), [Yong Guo](https://www.guoyongcs.com/), [Xiongfei Su](https://ieeexplore.ieee.org/author/37086348852), [Xin Yuan](https://en.westlake.edu.cn/faculty/xin-yuan.html), [Linghe Kong](https://www.cs.sjtu.edu.cn/~linghe.kong/), and [Yulun Zhang](http://yulunzhang.com/), "Binarized Diffusion Model for Image Super-Resolution", NeurIPS, 2024
 
-[[arXiv](https://arxiv.org/abs/2406.05723)] [visual results] [pretrained models]
+[[arXiv](https://arxiv.org/abs/2406.05723)] [[visual results](https://drive.google.com/drive/folders/1-Mfy8XHG55Bc19gAXqNaNitO0GEx7O1r?usp=drive_link)] [[pretrained models](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=drive_link)]
 
 
 
 #### 🔥🔥🔥 News
 
+- **2024-10-14:** Code and pre-trained models are released. ⭐️⭐️⭐️
 - **2024-09-26:** BI-DiffSR is accepted at NeurIPS 2024. 🎉🎉🎉
 - **2024-06-09:** This repo is released.
 
@@ -28,17 +29,85 @@
 
 ## TODO
 
-* [ ] Release code and pretrained models
+* [x] Release code and pretrained models
+
+## Dependencies
+
+- Python 3.9
+- PyTorch 1.13.1+cu117
+
+```bash
+# Clone the github repo and go to the default directory 'DAT'.
+git clone https://github.com/zhengchen1999/DAT.git
+conda create -n bi_diffsr python=3.9
+conda activate bi_diffsr
+pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
+git clone https://github.com/huggingface/diffusers.git
+cd diffusers
+pip install -e ".[torch]"
+```
 
 ## Contents
 
-1. Datasets
-1. Models
-1. Training
-1. Testing
+1. [Datasets](#datasets)
+1. [Models](#models)
+1. [Training](#training)
+1. [Testing](#testing)
 1. [Results](#results)
 1. [Citation](#citation)
 1. [Acknowledgements](#acknowledgements)
+
+## <a name="datasets"></a> Datasets
+
+Used training and testing sets can be downloaded as follows:
+
+| Training Set                                                 |                         Testing Set                          |                        Visual Results                        |
+| :----------------------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) (800 training images, 100 validation images) +  [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (2650 images) [complete training dataset DF2K: [Google Drive](https://drive.google.com/file/d/1TubDkirxl4qAWelfOnpwaSKoj3KLAIG4/view?usp=share_link) / [Baidu Disk](https://pan.baidu.com/s/1KIcPNz3qDsGSM0uDKl4DRw?pwd=74yc)] | Set5 + Set14 + BSD100 + Urban100 + Manga109 [complete testing dataset: [Google Drive](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) / [Baidu Disk](https://pan.baidu.com/s/1Tf8WT14vhlA49TO2lz3Y1Q?pwd=8xen)] | [Google Drive](https://drive.google.com/drive/folders/1ZMaZyCer44ZX6tdcDmjIrc_hSsKoMKg2?usp=drive_link) / [Baidu Disk](https://pan.baidu.com/s/1LO-INqy40F5T_coAJsl5qw?pwd=dqnv#list/path=%2F) |
+
+Download training and testing datasets and put them into the corresponding folders of `datasets/`. See [datasets](datasets/README.md) for the detail of the directory structure.
+
+## <a name="models"></a> Models
+
+| Method    | Params (M) | FLOPs (G) | PSNR (dB) | LPIPS  |                          Model Zoo                           |                        Visual Results                        |
+| :-------- | :--------: | :-------: | :-------: | :----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| BI-DiffSR |    4.58    |   36.67   |   24.11   | 0.1823 | [Google Drive](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=sharing) | [Google Drive](https://drive.google.com/drive/folders/1-Mfy8XHG55Bc19gAXqNaNitO0GEx7O1r?usp=sharing) |
+
+The performance is reported on Urban100 (x4). Output size of FLOPs is 3×256×256.
+
+## <a name="training"></a> Training
+
+- Download [training](https://drive.google.com/file/d/1TubDkirxl4qAWelfOnpwaSKoj3KLAIG4/view?usp=share_link) (DF2K, already processed) and [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
+
+- Run the following scripts. The training configuration is in `options/train/`.
+
+  ```shell
+  # RGT-S, input=64x64, 4 GPUs
+  python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 train.py -opt options/train/train_BI_DiffSR_x2.yml --launcher pytorch
+  python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 train.py -opt options/train/train_BI_DiffSR_x4.yml --launcher pytorch
+  ```
+  
+- The training experiment is in `experiments/`.
+
+## <a name="testing"></a> Testing
+
+- Download the pre-trained [models](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=sharing) and place them in `experiments/pretrained_models/`.
+
+  We provide pre-trained models for image SR (x2, x4).
+
+- Download [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, BSD100, Urban100, Manga109) datasets, place them in `datasets/`.
+
+- Run the following scripts. The testing configuration is in `options/test/`.
+
+  ```shell
+  # BI-DiffSR, reproduces results in Table 2 of the main paper
+  python test.py -opt options/test/test_BI_DiffSR_x2.yml
+  python test.py -opt options/test/test_BI_DiffSR_x4.yml
+  ```
+  
+  Due to the randomness of diffusion model ([diffusers](https://huggingface.co/docs/diffusers)), results may slightly vary.
+  
+- The output is in `results/`.
 
 ## <a name="results"></a> Results
 

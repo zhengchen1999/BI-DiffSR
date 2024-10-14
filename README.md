@@ -77,7 +77,7 @@ The performance is reported on Urban100 (×4). Output size of FLOPs is 3×256×2
 
 ## <a name="training"></a> Training
 
-- The ×2 task requires **4 * 8 GB** VRAM, and the ×4 task requires **4 * 20 GB** VRAM.
+- The ×2 task requires **4*8 GB** VRAM, and the ×4 task requires **4*20 GB** VRAM.
 
 - Download [training](https://drive.google.com/file/d/1TubDkirxl4qAWelfOnpwaSKoj3KLAIG4/view?usp=share_link) (DF2K, already processed) and [testing](https://drive.google.com/file/d/1yMbItvFKVaCT93yPWmlP3883XtJ-wSee/view?usp=sharing) (Set5, BSD100, Urban100, Manga109, already processed) datasets, place them in `datasets/`.
 

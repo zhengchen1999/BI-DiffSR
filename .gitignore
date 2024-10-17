@@ -10,6 +10,7 @@ scripts/metrics/*
 
 options/euler/*
 
+*.DS_Store
 .idea
 
 # ignored files
@@ -17,6 +18,7 @@ version.py
 
 # ignored files with suffix
 *.html
+*.png
 *.jpeg
 *.jpg
 *.gif

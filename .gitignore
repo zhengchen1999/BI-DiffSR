@@ -10,7 +10,6 @@ scripts/metrics/*
 
 options/euler/*
 
-*.DS_Store
 .idea
 
 # ignored files

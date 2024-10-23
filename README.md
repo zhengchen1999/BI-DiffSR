@@ -1,6 +1,9 @@
-<div align="center">
-<p align="center"> <img src="figs/logo.png" width="240px"> </p>
+<div align="center" style="background-color: white; display: inline-block; padding: 10px;">
+  <p align="center">
+    <img src="figs/logo.png" width="240px">
+  </p>
 </div>
+
 
 # Binarized Diffusion Model for Image Super-Resolution
 

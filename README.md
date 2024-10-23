@@ -6,7 +6,7 @@
 
 [Zheng Chen](https://zhengchen1999.github.io/), [Haotong Qin](https://htqin.github.io/), [Yong Guo](https://www.guoyongcs.com/), [Xiongfei Su](https://ieeexplore.ieee.org/author/37086348852), [Xin Yuan](https://en.westlake.edu.cn/faculty/xin-yuan.html), [Linghe Kong](https://www.cs.sjtu.edu.cn/~linghe.kong/), and [Yulun Zhang](http://yulunzhang.com/), "Binarized Diffusion Model for Image Super-Resolution", NeurIPS, 2024
 
-[[arXiv](https://arxiv.org/abs/2406.05723)] [[supplementary material](https://openreview.net/attachment?id=yXpfrLMIr2&name=supplementary_material)] [[visual results](https://drive.google.com/drive/folders/1-Mfy8XHG55Bc19gAXqNaNitO0GEx7O1r?usp=drive_link)] [[pretrained models](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=drive_link)]
+[[poject](https://zhengchen1999.github.io/BI-DiffSR-Web/)] [[arXiv](https://arxiv.org/abs/2406.05723)] [[supplementary material](https://github.com/zhengchen1999/BI-DiffSR/releases/download/v1/Supplementary_Material.pdf)] [[visual results](https://drive.google.com/drive/folders/1-Mfy8XHG55Bc19gAXqNaNitO0GEx7O1r?usp=drive_link)] [[pretrained models](https://drive.google.com/drive/folders/1hoHAG2yoLltloQ0SYv-QLxwk9Y8ZnTnH?usp=drive_link)]
 
 
 
@@ -21,8 +21,6 @@
 > **Abstract:** Advanced diffusion models (DMs) perform impressively in image super-resolution (SR), but the high memory and computational costs hinder their deployment. Binarization, an ultra-compression algorithm, offers the potential for effectively accelerating DMs. Nonetheless, due to the model structure and the multi-step iterative attribute of DMs, existing binarization methods result in significant performance degradation. In this paper, we introduce a novel binarized diffusion model, BI-DiffSR, for image SR. First, for the model structure, we design a UNet architecture optimized for binarization. We propose the consistent-pixel-downsample (CP-Down) and consistent-pixel-upsample (CP-Up) to maintain dimension consistent and facilitate the full-precision information transfer. Meanwhile, we design the channel-shuffle-fusion (CS-Fusion) to enhance feature fusion in skip connection. Second, for the activation difference across timestep, we design the timestep-aware redistribution (TaR) and activation function (TaA). The TaR and TaA dynamically adjust the distribution of activations based on different timesteps, improving the flexibility and representation alability of the binarized module. Comprehensive experiments demonstrate that our BI-DiffSR outperforms existing binarization methods.
 
 ![](figs/BI-DiffSR.png)
-
----
 
 ---
 
@@ -159,6 +157,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
   <img width="900" src="figs/F3-1.png">
   <img width="900" src="figs/F3-2.png">
 </p>
+
 </details>
 
 

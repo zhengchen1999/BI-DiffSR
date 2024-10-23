@@ -27,6 +27,8 @@ version.py
 *.npy
 *.pdf
 
+!figs/*.png
+
 # slurm
 *.err
 *.out

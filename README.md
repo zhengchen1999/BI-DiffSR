@@ -141,7 +141,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 
 
 
-- Results in Figure 13 (supplemental material)
+- Results in Figure 5 (supplemental material)
 
 <p align="center">
   <img width="900" src="figs/F2-1.png">
@@ -151,7 +151,7 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
 
 
 
-- Results in Figure 14 (supplemental material)
+- Results in Figure 6 (supplemental material)
 
 <p align="center">
   <img width="900" src="figs/F3-1.png">

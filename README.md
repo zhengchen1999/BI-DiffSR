@@ -159,7 +159,6 @@ We achieved state-of-the-art performance. Detailed results can be found in the p
   <img width="900" src="figs/F3-1.png">
   <img width="900" src="figs/F3-2.png">
 </p>
-
 </details>
 
 

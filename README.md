@@ -12,6 +12,7 @@
 
 #### 🔥🔥🔥 News
 
+- **2024-10-23:** [Project Page](https://zhengchen1999.github.io/BI-DiffSR-Web/) is accessible. 📃📃📃
 - **2024-10-14:** Code and pre-trained models are released. ⭐️⭐️⭐️
 - **2024-09-26:** BI-DiffSR is accepted at NeurIPS 2024. 🎉🎉🎉
 - **2024-06-09:** This repo is released.

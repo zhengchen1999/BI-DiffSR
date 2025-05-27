@@ -1,8 +1,6 @@
 # Project: BI-DiffSR
 https://zhengchen1999.github.io/BI-DiffSR
 
-
-
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
 

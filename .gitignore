@@ -16,17 +16,6 @@ options/euler/*
 # ignored files
 version.py
 
-# ignored files with suffix
-*.html
-*.png
-*.jpeg
-*.jpg
-*.gif
-*.pth
-*.zip
-*.npy
-*.pdf
-
 !figs/*.png
 
 # slurm
